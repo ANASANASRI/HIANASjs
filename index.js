@@ -1,12 +1,11 @@
 const express=require("express");
-const app=express();
+const index=express();
 
-const route=require("./routes/clientsRoutes")
+const route=require("./src/routers/HomeRoute.js");
+index.use(express.urlencoded({extended:true}));
 
-app.use(express.urlencoded({extended:true}));
+index.use("/",route);
 
-app.use("/",route)
-
-app.listen(7000,function(){
+index.listen(5000,function(){
     console.log("Sever is running");
 });
