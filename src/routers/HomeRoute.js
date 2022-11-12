@@ -3,6 +3,6 @@ const route=express.Router()
 
 const HomeControllers=require("../controllers/HomeControllers");
 
-route.get("/",HomeControllers.homevv)// 3lach "/"
+route.get("/",HomeControllers.homeget)// 3lach "/"
 
 module.exports=route

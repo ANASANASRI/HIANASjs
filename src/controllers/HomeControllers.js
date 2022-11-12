@@ -1,7 +1,7 @@
-const homevv=(req,res)=>{
-    res.send("this is home page");
+const homeget=(req,res)=>{
+    res.render('index', { });
 };
 
 module.exports={
-    homevv
+    homeget
 }
