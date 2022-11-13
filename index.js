@@ -6,14 +6,18 @@ const index=express();
 
 //EJS :
         // npm install ejs ---- // 2 params
-index.set('views','./src/views')
-index.set('view engine','ejs')
+index.set('views','./src/views') //fin 7at lviews
+index.set('view engine','ejs') //nach katgolih rak khedam b .ejs
 //--------------------------------------
 
 //BD MONGOOSE:
         //------------------------------
 const mongoose = require('mongoose');
+const dbURI = "mongodb+srv://anasbd:<password>@cluster0.fv0ksoj.mongodb.net/db_test?retryWrites=true&w=majority";
 
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(result=>console.log('connect'))
+    .catch(err => console.log(err));
 //--------------------------------------
 
 //ROUTE:
