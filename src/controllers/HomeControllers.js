@@ -1,8 +1,18 @@
+//FUNCTION :
 const homeget=(req,res)=>{
-    console.log("sss");
-    res.render('index', { });
+    res.render('home', { });
 };
 
+const indexget=(req,res)=>{
+    res.render('index', { });
+};
+//---------------------------
+
+
+//MODULE.EXPORTS (function)
+        //--------------
 module.exports={
-    homeget
+    homeget,
+    indexget
 }
+//------------------------

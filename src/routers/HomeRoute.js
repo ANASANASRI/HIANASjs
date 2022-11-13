@@ -1,8 +1,20 @@
+//EXPRESS :
+        // ----------------
 const express=require("express")
-const route=express.Router()
+//-------------------------
 
+//EXPRESS.ROUTER :
+const route=express.Router()
+//---------------------------
+
+//APPEL CONTROLLER :
 const HomeControllers=require("../controllers/HomeControllers");
 
-route.get("/home",HomeControllers.homeget)// 3lach "/"
+route.get("/home",HomeControllers.homeget)
+route.get("/index",HomeControllers.indexget)
+//-----------------------------
 
+//MODULE.EXPORTS  (route)
+        //--------------
 module.exports=route
+//-----------------------
