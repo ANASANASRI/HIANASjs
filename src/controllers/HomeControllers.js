@@ -1,4 +1,5 @@
 const homeget=(req,res)=>{
+    console.log("sss");
     res.render('index', { });
 };
 
