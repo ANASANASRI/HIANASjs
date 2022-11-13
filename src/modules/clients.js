@@ -1,12 +1,17 @@
 const mongoose=require("mongoose") //odm(model o documments)
 
-
+// definir le schema 
 const clientSchema=new mongoose.Schema({
         name:String,
         description:String,
         price:Number
 });
+//-----------------------------------
 
+//
+const Client = mongoose.model("clients",clientSchema);
+//------------------------------------
 
-const client = mongoose.model("client",clientSchema)
-module.exports=client;
+//
+module.exports=Client;
+//------------------------------------
