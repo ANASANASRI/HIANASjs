@@ -26,6 +26,20 @@ const route=require("./src/routers/HomeRoute.js");
 index.use("/",route);
 //---------------------------------------
 
+/* index.get("/cli",(req,res)=>{
+
+const client =new clients({
+        name:"iphone",
+        description:"description",
+        price:10000 
+        });
+client.save().then((result)=>{res.send(result)});
+
+}); */
+
+
+
+
 index.use(express.urlencoded({extended:true}));
 
 //PORT :

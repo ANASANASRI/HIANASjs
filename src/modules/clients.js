@@ -9,9 +9,9 @@ const clientSchema=new mongoose.Schema({
 //-----------------------------------
 
 //
-const Client = mongoose.model("clients",clientSchema);
+const client = mongoose.model('clients',clientSchema);
 //------------------------------------
 
 //
-module.exports=Client;
+module.exports=client;
 //------------------------------------
