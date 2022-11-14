@@ -16,8 +16,8 @@ const mongoose = require('mongoose');
 const dbURI = "mongodb+srv://anasbd:anas30@cluster0.fv0ksoj.mongodb.net/db_test?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI)
-    .then(result=>console.log('connect'))
-    .catch(err => console.log(err));
+        .then(result=>console.log('connect'))
+        .catch(err => console.log(err));
 //--------------------------------------
 
 //ROUTE:
@@ -31,6 +31,6 @@ index.use(express.urlencoded({extended:true}));
 //PORT :
         //---------------
 index.listen(7000,function(){
-    console.log("Sever is running");
+        console.log("Sever is running");
 });
 //-----------------------------------------
