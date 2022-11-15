@@ -27,23 +27,31 @@ const route=require("./src/routers/HomeRoute.js");
 index.use("/",route);
 //---------------------------------------
 
-                index.get("/adduser",(req,res)=>{
+index.get("/getuser",(req,res)=>{
+users.find().then((result)=>{res.json(result)});
+});
 
-                const use = new users({ 
-                        name: 'doufiane' , 
-                        description:'im the second user in this web', 
-                        age: 18
+/*     // add data
+
+        index.get("/adduser",(req,res)=>{
+
+        const use = new users({ 
+                name: 'doufiane' , 
+                description:'im the second user in this web', 
+                age: 18
+        });
+
+        use.save().then(()=>{res.send("add done")});
+
+        /* const client =new clients({
+                name:"iphone",
+                description:"description",
+                price:10000 
                 });
-
-                use.save().then(()=>{res.send("add done")});
-
-                /* const client =new clients({
-                        name:"iphone",
-                        description:"description",
-                        price:10000 
-                        });
-                client.save().then(()=>console.log(great)); */
-                }); 
+        client.save().then(()=>console.log(great));
+        });
+        
+ */
 
 index.use(express.urlencoded({extended:true}));
 
