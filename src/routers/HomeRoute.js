@@ -12,6 +12,10 @@ const HomeControllers=require("../controllers/HomeControllers");
 
 route.get("/home",HomeControllers.homeget)
 route.get("/index",HomeControllers.indexget)
+//
+route.get("/getdata",HomeControllers.getdata)
+route.get("/adddata",HomeControllers.adddata)
+
 //-----------------------------
 
 //MODULE.EXPORTS  (route)

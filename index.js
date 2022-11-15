@@ -27,9 +27,12 @@ const route=require("./src/routers/HomeRoute.js");
 index.use("/",route);
 //---------------------------------------
 
+
+/*     // get data
 index.get("/getuser",(req,res)=>{
 users.find().then((result)=>{res.json(result)});
 });
+*/
 
 /*     // add data
 
