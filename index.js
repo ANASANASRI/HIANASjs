@@ -13,7 +13,8 @@ index.set('view engine','ejs') //nach katgolih rak khedam b .ejs
 //BD MONGOOSE:
         //------------------------------
 const mongoose = require('mongoose');
-const dbURI = "mongodb+srv://anasbd:anas30@cluster0.fv0ksoj.mongodb.net/db_test?retryWrites=true&w=majority";
+const users = require("./src/modules/users.js");
+const dbURI = "mongodb+srv://anasbd:anas30@cluster0.fv0ksoj.mongodb.net/db_users?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI)
         .then(result=>console.log('connect'))
@@ -26,19 +27,23 @@ const route=require("./src/routers/HomeRoute.js");
 index.use("/",route);
 //---------------------------------------
 
-/* index.get("/cli",(req,res)=>{
+                index.get("/adduser",(req,res)=>{
 
-const client =new clients({
-        name:"iphone",
-        description:"description",
-        price:10000 
-        });
-client.save().then((result)=>{res.send(result)});
+                const use = new users({ 
+                        name: 'doufiane' , 
+                        description:'im the second user in this web', 
+                        age: 18
+                });
 
-}); */
+                use.save().then(()=>{res.send("add done")});
 
-
-
+                /* const client =new clients({
+                        name:"iphone",
+                        description:"description",
+                        price:10000 
+                        });
+                client.save().then(()=>console.log(great)); */
+                }); 
 
 index.use(express.urlencoded({extended:true}));
 
