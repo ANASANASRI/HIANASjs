@@ -12,6 +12,16 @@ const indexget=(req,res)=>{
 
 const getdata=(req,res)=>{
     users.find().then(users=>{res.json({users})});
+    //kina .findById("id")
+};
+
+const updatedata=(req,res)=>{
+    users.findById("637366bc0cedaa54a02a82c0").then(users=>{
+        users.name ="anas";
+        users.save().then(()=>{
+            res.send("good")
+        });
+    });
 };
 
 const adddata=(req,res)=>{
@@ -32,6 +42,7 @@ module.exports={
     homeget,
     indexget,
     adddata,
-    getdata
+    getdata,
+    updatedata
 }
 //------------------------
