@@ -17,7 +17,7 @@ route.get("/index",HomeControllers.indexget)
 route.get("/getdata",HomeControllers.getdata)
 route.get("/adddata",HomeControllers.adddata)
 route.get("/updatedata",HomeControllers.updatedata)
-
+route.get("/deletedata",HomeControllers.deletedata)
 //-----------------------------
 
 //MODULE.EXPORTS  (route)

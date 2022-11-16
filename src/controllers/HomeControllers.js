@@ -19,10 +19,17 @@ const updatedata=(req,res)=>{
     users.findById("637366bc0cedaa54a02a82c0").then(users=>{
         users.name ="anas";
         users.save().then(()=>{
-            res.send("good")
+            res.send("updated")
         });
     });
 };
+
+const deletedata=(req,res)=>{
+    users.findByIdAndDelete("//637366bc0cedaa54a02a82c0//").then(()=>{
+            res.send("deleted")
+        });
+};
+
 
 const adddata=(req,res)=>{
     const use = new users({ 
@@ -43,6 +50,7 @@ module.exports={
     indexget,
     adddata,
     getdata,
-    updatedata
+    updatedata,
+    deletedata
 }
 //------------------------
