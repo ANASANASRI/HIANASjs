@@ -11,7 +11,7 @@ const indexget=(req,res)=>{
 };
 
 const getdata=(req,res)=>{
-    users.find().then((result)=>{res.json(result)});
+    users.find().then(users=>{res.json({users})});
 };
 
 const adddata=(req,res)=>{
