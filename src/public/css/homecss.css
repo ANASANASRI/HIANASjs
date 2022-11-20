@@ -1,5 +1,4 @@
 .container {
-<<<<<<< HEAD
     background-color: rgb(93, 93, 93);
     display: flex;
     justify-content: space-around;
@@ -29,16 +28,3 @@
     width: auto;
     height: 80%;
 }
-=======
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.row {
-    background-color: blue;
-    width: 43%;
-    height: 43%;
-}
->>>>>>> 1e293fa375ea3700b8cb3b9088bcf84f83f3d588
