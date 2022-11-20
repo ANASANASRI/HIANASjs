@@ -1,12 +1,30 @@
 .container {
-    background-color: aquamarine;
+    background-color: rgb(93, 93, 93);
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    height: 100%;
 }
 
 .row {
-    background-color: blue;
-    width: 43%;
-    height: 43%;
+    width: 49%;
+    background-color: rgb(203, 201, 201);
+    text-align: center;
+    align-content: center;
+}
+
+.row_1 {
+    height: 80%;
+    align-content: center;
+}
+
+.first{
+    padding-top: 25%;
+}
+
+.img_1{
+    width: auto;
+    height: 80%;
 }
