@@ -1,0 +1,12 @@
+.container {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    background-color: blue;
+    width: 43%;
+    height: 43%;
+}

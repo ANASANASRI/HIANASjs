@@ -10,6 +10,11 @@ index.set('views','./src/views') //fin 7at lviews
 index.set('view engine','ejs') //nach katgolih rak khedam b .ejs
 //--------------------------------------
 
+//CSS :
+        // appele path css ---- // 
+index.use(express.static('src/public'));
+//--------------------------------------
+
 //BD MONGOOSE:
         //------------------------------
 const mongoose = require('mongoose');
