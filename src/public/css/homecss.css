@@ -1,6 +1,6 @@
 .container {
-    background-color: rgb(93, 93, 93);
-    display: flex;
+/*     background-color: rgb(93, 93, 93);
+ */    display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
@@ -10,8 +10,8 @@
 
 .row {
     width: 49%;
-    background-color: rgb(203, 201, 201);
-    text-align: center;
+/*     background-color: rgb(203, 201, 201);
+ */    text-align: center;
     align-content: center;
 }
 
@@ -27,4 +27,24 @@
 .img_1{
     width: auto;
     height: 80%;
+}
+
+.row_s{
+    text-align: center;
+}
+
+.container_s{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 80%;
+}
+
+.row_ss{
+    width: 20%;
+    height: 70%;
+    border-color: black;
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
 }
