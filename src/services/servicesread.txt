@@ -1,0 +1,5 @@
+..> kikon fiha les different fonctionement li gha t7taj fl app
+
+..> aprer ra t9dar t3ayet 3la kola fonction kina fservices bl controller 
+
+..>  router --> controller --> service --> models

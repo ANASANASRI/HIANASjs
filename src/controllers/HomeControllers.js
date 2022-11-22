@@ -1,7 +1,22 @@
 // DADTA USERS
 const users = require("../modules/users.js");
 
+// SERVICES
+const service = require("../services/hommeService.js");
+
 //FUNCTION :
+
+    //fuction services:
+    const gotohome=(req,res)=>{
+        service.gotohome()
+    };
+
+    const getalldata=(req,res)=>{
+        service.getalldata().then(users=>{res.json({users})})
+    //kina .findById("id") 
+    };
+    //------------------
+
 const homeget=(req,res)=>{
     res.render('home', { });
 };

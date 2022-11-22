@@ -4,7 +4,7 @@ const express=require("express");
 const index=express();
 //--------------------------------------
 
-//EJS :
+//bach tkhadem EJS :  {{render(home)}}
         // npm install ejs ---- // 2 params
 index.set('views','./src/views') //fin 7at lviews
 index.set('view engine','ejs') //nach katgolih rak khedam b .ejs
