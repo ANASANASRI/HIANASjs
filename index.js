@@ -25,6 +25,16 @@ mongoose.connect(dbURI)
         .then(result=>console.log('connect'))
         .catch(err => console.log(err));
 //--------------------------------------
+/* OR */
+/* require('dotenv').config()
+/* console.log(process.env.dbURL)*/
+
+/*const clients = require("./models/clients.js");
+
+mongoose.connect(process.env.dbURL)
+        .then(result=>console.log('connect'))
+        .catch(err => console.log(err)); */
+//_________________________________________________
 
 //ROUTE:
         //------------------------------
