@@ -63,3 +63,25 @@ body{
 .textpartners{
     color: var(--main-color);
 }
+
+.container3{
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 5% 3% 1% 3%;
+}
+
+.items3{
+    padding:  0 0 0 3%;
+}
+
+.items32{
+    padding: 0 0 0 0;
+}
+
+.textd2{
+    color: var(--dark-one);   
+    padding-bottom: 4%;
+}
