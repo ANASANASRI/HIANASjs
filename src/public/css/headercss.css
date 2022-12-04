@@ -1,7 +1,7 @@
 :root {
-    --dark-one: #333;
+    --dark-one: #212529;
     --dark-two: #7a7a7a;
-    --main-color: #784cfb;
+    --main-color: #74C69D;
     --light-one: #fff;
     --light-two: #f9fafb;
     --light-three: #f6f7fb;
@@ -31,7 +31,19 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.ietms01{
+    justify-items: center;
+}
+
+.ietms02{
+    justify-items: center;
+}
+
+.ietms03{
+    justify-items: center;
 }
 
 nav{
