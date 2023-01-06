@@ -7,7 +7,7 @@
     --light-three: #f6f7fb;
 }
 
-@media screen and (max-width:) {
+@media screen and (max-width:2000px) {
     nav{background-color: var(--light-three);}
 }
 
@@ -53,7 +53,6 @@ nav{
     right: 0;
     z-index: 0;
     padding: 16px 32px;
-    border-bottom: 3px solid var(--dark-one);
 }
 
 .button{
